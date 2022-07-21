@@ -35,7 +35,7 @@ export default function Header() {
                                 LOGIN
                             </b>
                         </Link>
-                        <Link class="nav-link text-dark px-3" to="#" style={{ fontSize: "14px" }}>
+                        <Link class="nav-link text-dark px-3" to="/add_to_cart" style={{ fontSize: "14px" }}>
                             <b>
                                 <div className="text-center">
                                     <i class="fa fa-shopping-cart" style={{ fontSize: "24px" }}></i>
