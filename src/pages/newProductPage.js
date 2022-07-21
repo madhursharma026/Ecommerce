@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
 import BelieveCardAfterMDScrn from "./ProductPageComponents/BelieveCardAfterMDScrn";
 import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMDScrn";
+import BenefitsCard from "./ProductPageComponents/BenefitsCard";
+import RelatedProductCard from "./RelatedProductCard/RelatedProductCard";
+import ReviewAndRating from "./ReviewAndRating/ReviewAndRating";
 
-function ProductPage() {
+function NewProductPage() {
     return (
         <div className="container-xl">
             <div className="row pt-3">
@@ -44,7 +48,7 @@ function ProductPage() {
                         </button>
                     </div>
                 </div>
-                <div className="col-lg-6 px-3">
+                <div className="col-lg-6 px-1 px-lg-3">
                     <h3>Darjeeling Castleton Spring Chinary Black</h3>
                     <div className="row">
                         <div className="col">Darjeeling Black</div>
@@ -95,19 +99,32 @@ function ProductPage() {
                             </div>
                         </div>
                     </div>
-                    <h4 className="pt-4">₹ 749</h4>
-                    <p className="pt-4">Or 3 interest free payments of ₹ 249.68 with</p>
-                    <button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-plus"></i></button><input type="text" style={{ width: "80px", fontSize: "24px" }} defaultValue="1" /><button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn" style={{ background: "#02CB5A", color: "white", fontSize: "20px", marginTop: "-10px", width: "65%" }}><b>SIP NOW</b></button>
+                    <h4 className="pt-4"><del>₹749</del> ₹549</h4>
+                    <div className="row">
+                        <div className="col-xl-4 text-center pb-3">
+                            <button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-plus"></i></button><input type="text" style={{ width: "80px", fontSize: "24px" }} defaultValue="1" /><button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-minus"></i></button>
+                        </div>
+                        <div className="col-6 col-xl-4 pb-3">
+                            <button type="button" class="btn btn-secondary w-100">Add to Cart</button>
+                        </div>
+                        <div className="col-6 col-xl-4 pb-3">
+                            <button type="button" class="btn btn-primary w-100">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="mx-xl-5 believe_car_before_md_scrn">
+            <div className="mx-xl-5 believe_car_before_md_scrn pt-5">
+                <h1 className="text-center why_choose_us_heading">Why Choose Us</h1>
                 <BelieveCardBeforeMDScrn />
             </div>
-            <div className="believe_car_after_md_scrn">
+            <div className="believe_car_after_md_scrn pt-5">
+                <h1 className="text-center why_choose_us_heading">Why Choose Us</h1>
                 <BelieveCardAfterMDScrn />
             </div>
             <h1 className="text-center freshness_journey_heading">FRESHNESS JOURNEY</h1>
+            <div className="heading_para_size text-center pb-3">
+                Our Unique $ Transparent procurement process, from <b>leaf to cup</b>
+            </div>
             <div className="text-center">
                 <div className="row">
                     <div className="col-4 col-md-2">
@@ -142,11 +159,21 @@ function ProductPage() {
                     </div>
                 </div>
             </div>
-            <div className="py-5">
+            <div className="videoSection py-5">
+                <h1 className="text-center freshness_journey_heading">Product Video</h1>
+                <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h1 className="text-center know_your_ghee_heading"><u>KNOW YOUR Ghee</u></h1>
+            <div className="py-3">
                 <h1 className="text-center know_your_tea_heading">KNOW YOUR TEA</h1>
                 <div className="text-center">
-                    <p style={{ fontSize: "22px" }}>Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
-                    <div className="row px-5">
+                    <p className="heading_para_size">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
+
+                    <div className="row p-5">
+                        <h1 className="text-center product_speacfication_heading pb-4">Product Specifications</h1>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/specs-5_green_de520591-ebda-4c3b-b443-34b96341f545.svg?v=1632141212" alt="#ImgNotFound" width="50px" height="50px" />
                             <h6 style={{ fontSize: "15px" }}>Season</h6>
@@ -178,84 +205,164 @@ function ProductPage() {
                             <p className="text-success" style={{ fontSize: "12px" }}>EX-5</p>
                         </div>
                     </div>
+
+                    <h1 className="text-center benefits_heading pb-4">Benefits</h1>
+                    <div className="row">
+                        <div className="col-12 col-md-6 col-xl-4">
+                            <BenefitsCard />
+                        </div>
+                        <div className="col-12 col-md-6 col-xl-4">
+                            <BenefitsCard />
+                        </div>
+                        <div className="col-12 col-md-6 col-xl-4">
+                            <BenefitsCard />
+                        </div>
+                        <div className="col-12 col-md-6 col-xl-4">
+                            <BenefitsCard />
+                        </div>
+                        <div className="col-12 col-md-6 col-xl-4">
+                            <BenefitsCard />
+                        </div>
+                        <div className="col-12 col-md-6 col-xl-4">
+                            <BenefitsCard />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="py-5">
+                <h1 className="text-center cartificate_heading">Certificate</h1>
                 <div className="row">
-                    <div className="col" style={{ textAlign: "right" }}>
-                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Rain-Forest-Alliance_480x.jpg?v=14369409827332263818" alt="#ImgNotFound" />
+                    <div className="col text-center">
+                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Rain-Forest-Alliance_480x.jpg?v=14369409827332263818" alt="#ImgNotFound" width="200px" height="200px" />
                     </div>
-                    <div className="col">
-                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Ethical-Trade-Partnership_480x.jpg?v=4039903149469949543" alt="#ImgNotFound" />
+                    <div className="col text-center">
+                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Ethical-Trade-Partnership_480x.jpg?v=4039903149469949543" alt="#ImgNotFound" width="200px" height="200px" />
+                    </div>
+                    <div className="col text-center">
+                        <img src="https://www.usda.gov/sites/default/files/Organic%20Seal%20-%20small.png" alt="#ImgNotFound" width="200px" height="200px" />
                     </div>
                 </div>
             </div>
-            <div className="py-5 px-3">
-                <h1 className="text-center your_experience">THE EXPERIENCE</h1>
-                <h1 className="text-center">(Liquor)</h1>
+            <div className="py-5 px-1 px-lg-3">
+                <h1 className="text-center your_experience">EXPERIENCE</h1>
                 <div className="row pt-5">
                     <div className="col-md-6 order-2 order-md-1">
-                        <h3>Aroma</h3>
+                        <h3>Appearance</h3>
                         <p className="heading_para_size">
-                            Stone-fruity along with notes of sweet-greens, fresh nuts and green figs
+                            Champagne
                         </p>
                         <h3>Taste</h3>
                         <p className="heading_para_size">
-                            A medium-bodied cup which feels ample in the mouth and beams with sweet-green attributes. It starts out with distinct notes of pleasant greens which intermingle with delicious stone-fruity characters, akin to peach to define the central theme of the liquor. Subtle nutty undercurrents are discernible around the edges, which gradually subside to finish on lush citrusy intonations. Furtive notes of green figs lingers on in the aftertaste, making for a captivating finale.
-                        </p>
-                        <h3>COMPLEMENTS</h3>
-                        <p className="heading_para_size">
-                            Steamed seafood, salads with creamy dressing, tropical fruit and assorted cheeses
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi ipsa culpa? Ad modi animi corporis libero, ipsam voluptatem molestiae quas optio repellat iusto in, asperiores quam neque amet suscipit laboriosam odit, quidem quaerat ipsa sapiente eligendi! Maxime repellat amet voluptatem eum excepturi labore exercitationem distinctio quaerat repudiandae, eos quam facilis sunt itaque? Cupiditate minima quo consequuntur asperiores sequi? Consectetur aspernatur beatae odit? Pariatur, quam tempora suscipit rerum consequatur et nesciunt, iusto error ut eligendi excepturi quod, cum neque non velit dolorum eum fuga molestias est laboriosam enim doloremque illum perspiciatis. Dolores tempore accusantium blanditiis sequi, ex natus beatae excepturi.
                         </p>
                     </div>
                     <div className="col-md-6 order-1 order-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_4_1000x.jpg?v=1653567234" alt="#ImgNotFound" className="w-100" />
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/dryleaves.svg?v=1625478166" alt="#ImgNotFound" width="50px" height="50px" />
-                        <h2 className="pt-4">Dry Leaf</h2>
-                        <div className="pt-4">
-                            <h3>Aroma</h3>
-                            <p className="heading_para_size">
-                                Fresh nuts, earthy, hints of cedar along with light tones of millefeuille
-                            </p>
+                <h1 className="text-center How_to_Check_Ghee_Purity_heading py-5"><u>How to Check Ghee Purity-</u></h1>
+                <div className="px-xl-5 mx-xl-5">
+                    <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="row">
+                        <div className="col-12 col-md-4">
+                            <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <div className="pt-4">
-                            <h3>Appearance</h3>
-                            <p className="heading_para_size">
-                                Short, tightly rolled, blackish-green leaves with some silvery buds and olive-green leaf cuttings
-                            </p>
+                        <div className="col-12 col-md-4">
+                            <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                    </div>
-                    <div className="col-md-6">
-                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/t/604/assets/InfusedLeaves.svg?v=122163067981529682131638388147" alt="#ImgNotFound" width="50px" height="50px" />
-                        <h2 className="pt-4">Infusion</h2>
-                        <div className="pt-4">
-                            <h3>Aroma</h3>
-                            <p className="heading_para_size">
-                                Vegetal, wet earth with soft nutty and citrusy accents
-                            </p>
-                        </div>
-                        <div className="pt-4">
-                            <h3>Appearance</h3>
-                            <p className="heading_para_size">
-                                Short, mix of dark and olive-green leaves; some with young buds and stems detached
-                            </p>
+                        <div className="col-12 col-md-4">
+                            <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="py-5 px-3">
-                <h1 className="text-center your_experience">STEEPING NOTES</h1>
-                <h1 className="text-center">(Recommended Steeps)</h1>
-            </div>
-            <div className="row">
-                .col-4
+                <h1 className="text-center How_to_Check_Ghee_Purity_heading py-5"><u>How to Check Ghee Purity-</u></h1>
+                <h1 className="text-center know_your_tea_heading">KNOW YOUR TEA</h1>
+                <div classsName="text-center">
+                    <p className="heading_para_size">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
+                </div>
+                <h1 className="text-center review_and_rating_heading py-5"><u>Rating and Reviews</u></h1>
+                <h4>Rating and Reviews</h4>
+                <div className="row">
+                    <div className="col-6">
+                        <div className="row">
+                            <div className="col-lg-5 text-center">
+                                <h1>4.97</h1>
+                                <h4><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h4>
+                                <h6>40 reviews</h6>
+                            </div>
+                            <div className="col-lg-7 text-center">
+                                <h6>5 <progress value="95" max="100" style={{ background: "#51BE66" }}></progress></h6>
+                                <h6>4 <progress value="5" max="100" style={{ background: "#51BE66" }}></progress></h6>
+                                <h6>3 <progress value="00" max="100" style={{ background: "#51BE66" }}></progress></h6>
+                                <h6>2 <progress value="00" max="100" style={{ background: "#51BE66" }}></progress></h6>
+                                <h6>1 <progress value="00" max="100" style={{ background: "#51BE66" }}></progress></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-6" style={{ textAlign: 'right' }}>
+                        <button type="button" class="btn text-light" style={{ background: "#51BE66" }}>WRITE A REVIEW</button>
+                    </div>
+                </div>
+                <hr />
+                <span class="dropdown px-1 px-lg-3">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ width: "150px", border: "1px solid black", borderRadius: "0" }}>
+                        <span style={{ fontSize: "14px" }}>Sort by Featured</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><Link to="/" class="dropdown-item">Option</Link></li>
+                        <li><Link to="/" class="dropdown-item">Option</Link></li>
+                        <li><Link to="/" class="dropdown-item">Option</Link></li>
+
+                    </ul>
+                </span>
+                <span class="dropdown px-1 px-lg-3">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ width: "150px", border: "1px solid black", borderRadius: "0" }}>
+                        <span style={{ fontSize: "14px" }}>Rating All</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><Link to="/" class="dropdown-item">Option</Link></li>
+                        <li><Link to="/" class="dropdown-item">Option</Link></li>
+                        <li><Link to="/" class="dropdown-item">Option</Link></li>
+                    </ul>
+                </span>
+                <span class="dropdown px-1 px-lg-3">
+                    <input type="checkbox" />&ensp;
+                    With media
+                </span>
+                <div className="row pt-4">
+                    <div className="col-md-6 col-lg-4">
+                        <ReviewAndRating />
+                    </div>
+                    <div className="col-md-6 col-lg-4">
+                        <ReviewAndRating />
+                    </div>
+                    <div className="col-md-6 col-lg-4">
+                        <ReviewAndRating />
+                    </div>
+                </div>
+                <h1 className="text-center related_project_heading pt-5">Related Products</h1>
+                <div className="row">
+                    <div className="col-12 col-md-6 col-xl-4">
+                        <RelatedProductCard />
+                    </div>
+                    <div className="col-12 col-md-6 col-xl-4">
+                        <RelatedProductCard />
+                    </div>
+                    <div className="col-12 col-md-6 col-xl-4">
+                        <RelatedProductCard />
+                    </div>
+                </div>
             </div>
         </div>
     );
 }
 
-export default ProductPage;
+export default NewProductPage;

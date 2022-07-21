@@ -16,34 +16,13 @@ export default function Header() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>CHAI</b></Link>
+                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>HOME</b></Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>GREEN</b></Link>
+                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>PRODUCTS</b></Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>HERBAL</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>DARJEELING+</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>TEABAGS</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark text-success" to="#" style={{ fontSize: "14px" }}><b>SAMPLERS</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>SHOP BY+</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>GIFTS</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>TEAWARE</b></Link>
-                                </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>EXPLORE</b></Link>
+                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>CONTACT US</b></Link>
                                 </li>
                             </ul>
                         </div>
@@ -65,14 +44,6 @@ export default function Header() {
                                 CART
                             </b>
                         </Link>
-                        <div className="px-3" style={{ fontSize: "14px", cursor: "pointer" }}>
-                            <b>
-                                <div className="text-center">
-                                    <i class="fa fa-search" style={{ fontSize: "24px" }}></i><br />
-                                </div>
-                                SEARCH
-                            </b>
-                        </div>
                     </div>
                 </nav>
             </div>
@@ -131,26 +102,11 @@ export default function Header() {
                         </div>
                         <h6 className='text-light p-2' data-bs-dismiss="offcanvas" aria-label="Close" style={{ cursor: "pointer" }}><i class="fa fa-close"></i></h6>
                     </div>
-                    <Link to="/" className='pt-3 px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>CHAI</b></Link>
+                    <Link to="/" className='pt-3 px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>HOME</b></Link>
                     <hr className='p-0' />
-                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>GREEN</b></Link>
+                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>PRODUCTS</b></Link>
                     <hr className='p-0' />
-                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>HERBAL</b></Link>
-                    <hr className='p-0' />
-                    {/* <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>DARJEELING+</b> <span style={{textAlign:"right"}}><i class="fa fa-angle-right"></i></span></Link> */}
-                    <h6 to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>DARJEELING+</b> <span style={{ float: "right" }}><i class="fa fa-angle-down"></i></span></h6>
-                    <hr className='p-0' />
-                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>TEABAGS</b></Link>
-                    <hr className='p-0' />
-                    <Link to="/" className='px-3 text-success' style={{ textDecoration: "none", textAlign: "left" }}><b>SAMPLERS</b></Link>
-                    <hr className='p-0' />
-                    <h6 to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>SHOP BY+</b> <span style={{ float: "right" }}><i class="fa fa-angle-down"></i></span></h6>
-                    <hr className='p-0' />
-                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>GIFTS</b></Link>
-                    <hr className='p-0' />
-                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>TEAWARE</b></Link>
-                    <hr className='p-0' />
-                    <h6 to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>EXPLORE+</b> <span style={{ float: "right" }}><i class="fa fa-angle-down"></i></span></h6>
+                    <Link to="/" className='px-3' style={{ color: "black", textDecoration: "none", textAlign: "left" }}><b>CONTACT US</b></Link>
                 </div>
             </div>
         </>

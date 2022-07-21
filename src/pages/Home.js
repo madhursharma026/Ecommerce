@@ -60,6 +60,13 @@ function Home() {
         <p style={{ fontSize: "14px" }}>
           First flush teas are delicate in flavor and retain the crispness of the mountain air of the Himalayas. There is a wide choice of green, white, and black Darjeeling teas. You can choose from our extensive collection of 2022 first flush teas that includes prized moonlight white teas from estates like Castleton and Margaret’s Hope, classic black teas from estates like Jungpana and Goomtee, and the much sought after clonals.
         </p>
+        <h1 className="text-center know_your_tea_heading pt-5">WHY TEABOX IS THE FRESHEST?</h1>
+        <div className="text-center px-lg-5 mx-lg-5">
+          <h4 className="pt-3">INDIA'S FIRST 100% TRANSPARENT PROCUREMENT TEA PROCESS</h4>
+          <p>Being just an hour and a half away from the iconic tea gardens of the world, we have devised a unique tea sourcing process. We procure teas within 24-48 hrs of sampling and keep them under <b>3-4% moisture levels.</b> Next, we hand sort & clean whole leaves for impurities, <b>vacuum pack,</b> and store them under controlled environment.</p>
+          <h4 className="pt-3">WE ARE DISRUPTING A 200-YEAR-OLD TEA INDUSTRY</h4>
+          <p>From <b>leaf to cup, fresh in 7 days,</b> we connect tea to all tea lovers.</p>
+        </div>
       </div>
     </>
   );

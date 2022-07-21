@@ -41,6 +41,24 @@ export default function BelieveCardBeforeMDScrn() {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-6">
+                            <div className="row pb-3">
+                                <div className="col-2"><img src="https://cdn.shopify.com/s/files/1/1865/1011/files/painpoint-3.svg?v=5371628828082774297" alt="#ImgNotFound" /></div>
+                                <div className="col-10">
+                                    <h5>Whole leaf, highest tea grade</h5>
+                                    <p>Pure Indian single estate tea experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="row pb-3">
+                                <div className="col-2"><img src="https://cdn.shopify.com/s/files/1/1865/1011/files/painpoint-4.svg?v=15276113402176299430" alt="#ImgNotFound" /></div>
+                                <div className="col-10">
+                                    <h5>At your doorstep within 2-4 days</h5>
+                                    <p>Ships in 24 hours. Delivers worldwide.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
