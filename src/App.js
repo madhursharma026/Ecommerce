@@ -4,6 +4,8 @@ import './content/css/App.css'
 
 import Home from './pages/Home';
 import NoPage from './pages/NoPage';
+import ShopPage from './pages/ShopPage';
+import ProductPage from './pages/productPage';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<><Home /> <title>Teabox: Buy Delicious Indian Teas Online - Delivered Fresh &ndash; Teabox IN</title></>} />
-          <Route path="/dusra_page" element={<><Home /> <title>Dusra page</title></>} />
+          <Route path="/shop_page" element={<><ShopPage /> <title>Buy First Flush Spring Darjeeling Tea online from Teabox. Shop First Flush Spring Tea online &amp; get it shipped, straight from the source. Enjoy a great cup of Tea.</title></>} />
+          <Route path="/product_page" element={<><ProductPage /> <title>Buy First Flush Spring Darjeeling Tea online from Teabox. Shop First Flush Spring Tea online &amp; get it shipped, straight from the source. Enjoy a great cup of Tea.</title></>} />
           <Route path="*" element={<><NoPage /> <title>Error 404</title></>} />
         </Route>
       </Routes>

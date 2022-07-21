@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import CardStyle from "../components/CardStyle";
+import ProductCardStyle from "../components/ProductCardStyle";
+import product1 from '../content/images/product1.jpg'
+import product2 from '../content/images/product2.jpg'
 
 function Home() {
   return (
@@ -29,10 +31,10 @@ function Home() {
       <div className="container-xl py-5">
         <div className="row pb-5 px-lg-5">
           <div className="col-md-6 pt-3">
-            <CardStyle productImg="https://cdn.shopify.com/s/files/1/1865/1011/products/FFTBCHB_2_480x.jpg?v=1653632239" ratingQty="15" productName="Darjeeling Thurbo Spring Chinary Black" productDesc="A fresh vegetal $ fruity cup from Darjeeling" />
+            <ProductCardStyle productImg={product1} ratingQty="15" productName="Darjeeling Thurbo Spring Chinary Black" productDesc="A fresh vegetal $ fruity cup from Darjeeling" />
           </div>
           <div className="col-md-6 pt-3">
-            <CardStyle productImg="https://cdn.shopify.com/s/files/1/1865/1011/products/FFTBCHB_2_480x.jpg?v=1653632239" ratingQty="15" productName="Darjeeling Thurbo Spring Chinary Black" productDesc="A fresh vegetal $ fruity cup from Darjeeling" />
+            <ProductCardStyle productImg={product2} ratingQty="15" productName="Darjeeling Thurbo Spring Chinary Black" productDesc="A fresh vegetal $ fruity cup from Darjeeling" />
           </div>
         </div>
         <h2>First/Spring Flush</h2>
