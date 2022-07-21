@@ -4,8 +4,14 @@ import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMD
 import BenefitsCard from "./ProductPageComponents/BenefitsCard";
 import RelatedProductCard from "./RelatedProductCard/RelatedProductCard";
 import ReviewAndRating from "./ReviewAndRating/ReviewAndRating";
+import { useEffect } from "react";
 
 function NewProductPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+
     return (
         <div className="container-xl">
             <div className="row pt-3">

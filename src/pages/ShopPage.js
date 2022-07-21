@@ -3,8 +3,14 @@ import ProductCardStyle from "../components/ProductCardStyle";
 import product1 from '../content/images/product1.jpg'
 import product2 from '../content/images/product2.jpg'
 import shopPageTopBg from '../content/images/shopPageTopBg.jpg'
+import { useEffect } from "react";
 
 function ShopPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+
     return (
         <>
             <img src={shopPageTopBg} alt="#ImgNotFound" className="img-fluid w-100" />

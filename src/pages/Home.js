@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 import ProductCardStyle from "../components/ProductCardStyle";
 import product1 from '../content/images/product1.jpg'
 import product2 from '../content/images/product2.jpg'
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <>
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">

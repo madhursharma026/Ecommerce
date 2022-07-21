@@ -1,7 +1,13 @@
 import BelieveCardAfterMDScrn from "./ProductPageComponents/BelieveCardAfterMDScrn";
 import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMDScrn";
+import { useEffect } from "react";
 
 function ProductPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+
     return (
         <div className="container-xl">
             <div className="row pt-3">
