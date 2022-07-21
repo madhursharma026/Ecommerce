@@ -16,7 +16,7 @@ export default function Header() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>HOME</b></Link>
+                                    <Link class="nav-link text-dark" to="/" style={{ fontSize: "14px" }}><b>HOME</b></Link>
                                 </li>
                                 <li class="nav-item">
                                     <Link class="nav-link text-dark" to="#" style={{ fontSize: "14px" }}><b>PRODUCTS</b></Link>
@@ -27,7 +27,7 @@ export default function Header() {
                             </ul>
                         </div>
 
-                        <Link class="nav-link text-dark px-3" to="#" style={{ fontSize: "14px" }}>
+                        <Link class="nav-link text-dark px-3" to="/login" style={{ fontSize: "14px" }}>
                             <b>
                                 <div className="text-center">
                                     <i class="fa fa-user" style={{ fontSize: "24px" }}></i><br />
@@ -60,7 +60,7 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="col pt-2">
-                        <Link class="nav-link text-light" to="#" style={{ fontSize: "16px" }}>
+                        <Link class="nav-link text-light" to="/" style={{ fontSize: "16px" }}>
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Mobile_logo_1.webp?v=1656653088" alt="#ImgNotFound" height="25px" width="25px" /><br />
                             Home
                         </Link>
@@ -79,10 +79,38 @@ export default function Header() {
                         </Link>
                     </div>
                     <div className="col pt-2">
-                        <Link class="nav-link text-light" to="#" style={{ fontSize: "16px" }}>
+                        {/* <Link class="nav-link text-light" to="/dashboard" style={{ fontSize: "16px" }}>
                             <i class="fa fa-user" style={{ fontSize: "18px" }}></i><br />
                             Profile
-                        </Link>
+                        </Link> */}
+                        <div class="dropdown">
+                            <button class="btn text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ border: "0" }}>
+                                <i class="fa fa-user" style={{ fontSize: "18px" }}></i><br />
+                                Profile
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <Link class="dropdown-item" to="/dashboard">
+                                        <i className="fa fa-user"> My Profile</i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to="/my_order">
+                                        <i className="fa fa-shopping-cart"> My Orders</i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to="my_address">
+                                        <i className="fa fa-map-marker"> My Address</i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link class="dropdown-item" to="/">
+                                        <i class="fa fa-question-circle"> Help</i>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -95,7 +123,7 @@ export default function Header() {
                                 </div>
                                 <div className="col-10">
                                     <h6>Welcome! <br />
-                                        <Link to='/' style={{ fontSize: "14px", textDecoration: "none", color: "white" }}>Login/Signup</Link>
+                                        <Link to='/login' style={{ fontSize: "14px", textDecoration: "none", color: "white" }}>Login/Signup</Link>
                                     </h6>
                                 </div>
                             </div>

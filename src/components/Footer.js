@@ -8,7 +8,7 @@ import headerLogo from '../content/images/headerLogo.png'
 export default function Footer() {
     return (
         <>
-            <img src={footerImg} alt="#imgNotFound" className='img-fluid' style={{ background: "#EAEAEA" }} />
+            <img src={footerImg} alt="#imgNotFound" className='img-fluid w-100' style={{ background: "#EAEAEA" }} />
             <br />
             <div className="container-xl p-3">
                 <div className='option_after_md_scrn'>

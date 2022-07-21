@@ -59,8 +59,12 @@
     font-size: 16px;
 }
 
-.add_to_cart_email{
+.add_to_cart_email {
     margin-left: 80px;
+}
+
+.dashboard_data_after_md_srcn{
+    display: none;
 }
 
 @media (max-width: 1199px) {
@@ -93,6 +97,14 @@
 
     .believe_car_before_md_scrn {
         display: none;
+    }
+
+    .dashboard_data_before_md_srcn{
+        display: none;
+    }
+
+    .dashboard_data_after_md_srcn{
+        display: block;
     }
 }
 
@@ -147,7 +159,7 @@
 }
 
 @media (max-width: 992px) {
-    .item_details{
+    .item_details {
         text-align: center;
     }
 }
