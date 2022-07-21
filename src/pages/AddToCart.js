@@ -45,7 +45,7 @@ function AddToCart() {
                         <h3>Cart(2)</h3>
                         <div className="row product_details pt-3">
                             <div className="col-3 col-xl-2" style={{textAlign:"right"}}>
-                                <img src="http://localhost:3000/static/media/product1.72600f6ac0341cd6ee20.jpg" alt="#ImgNotFound" width="80px" height="80px" />
+                                <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_2_480x.jpg?v=1653632514" alt="#ImgNotFound" width="80px" height="80px" />
                             </div>
                             <div className="col-9 col-xl-10" style={{textAlign:"left"}}>
                                 <h6>Your Product Name</h6>
@@ -55,7 +55,7 @@ function AddToCart() {
                         </div>
                         <div className="row product_details pt-3">
                             <div className="col-3 col-xl-2" style={{textAlign:"right"}}>
-                                <img src="http://localhost:3000/static/media/product1.72600f6ac0341cd6ee20.jpg" alt="#ImgNotFound" width="80px" height="80px" />
+                                <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_2_480x.jpg?v=1653632514" alt="#ImgNotFound" width="80px" height="80px" />
                             </div>
                             <div className="col-9 col-xl-10" style={{textAlign:"left"}}>
                                 <h6>Your Product Name</h6>
