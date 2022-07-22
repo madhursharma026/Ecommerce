@@ -70,7 +70,7 @@ function ShopPage() {
                         <ProductCardStyle productImg={product2} ratingQty="15" productName="Darjeeling Thurbo Spring Chinary Black" productDesc="A fresh vegetal $ fruity cup from Darjeeling" />
                     </div>
                 </div>
-                <h2>First/Spring Flush</h2>
+                <h2 className="main_heading">First/Spring Flush</h2>
                 <p style={{ fontSize: "14px" }}>
                     In India, the first flush teas are plucked between March and April following the first light showers of late February. Since this period coincides with the spring season, these pluckings are also referred to as spring teas or Easter teas. More information about first flushes here.
                 </p>

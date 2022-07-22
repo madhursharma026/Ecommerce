@@ -1,7 +1,6 @@
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import './content/css/App.css'
-
 import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 import ShopPage from './pages/ShopPage';

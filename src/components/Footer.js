@@ -2,14 +2,12 @@ import { Link } from 'react-router-dom';
 import fbIcon from '../content/images/fbIcon.png'
 import instaIcon from '../content/images/instaIcon.png'
 import twiterIcon from '../content/images/twiterIcon.png'
-import footerImg from '../content/images/footerImg.png'
 import headerLogo from '../content/images/headerLogo.png'
 
 export default function Footer() {
     return (
         <>
-            <img src={footerImg} alt="#imgNotFound" className='img-fluid w-100' style={{ background: "#EAEAEA" }} />
-            <br />
+        <hr />
             <div className="container-xl p-3">
                 <div className='option_after_md_scrn'>
                     <h5 className='pt-5'>Take an <span className='text-success'>extra 10%</span> off your order</h5>

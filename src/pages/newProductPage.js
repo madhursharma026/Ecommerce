@@ -77,7 +77,7 @@ function NewProductPage() {
                         <div className="col" style={{ display: "flex" }}>
                             <div class="card w-100" style={{ border: "2px solid #009340" }}>
                                 <div class="card-body py-1">
-                                    <h6 className="text-success text-center" style={{ fontSize: "15px" }}>
+                                    <h6 className="text-success text-center" className="sub_para">
                                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/loose-leaf-green.svg?v=3326972369061157883" alt="#ImgNotFound" width="15px" height="15px" /> Loose leaf <br />
                                         100gm | 50 cups
                                     </h6>
@@ -87,7 +87,7 @@ function NewProductPage() {
                         <div className="col" style={{ display: "flex" }}>
                             <div class="card w-100">
                                 <div class="card-body py-1">
-                                    <h6 className="text-center" style={{ fontSize: "15px" }}>
+                                    <h6 className="text-center" className="sub_para">
                                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/loose-leaf.svg?v=9469339130553571855" alt="#ImgNotFound" width="15px" height="15px" /> Loose leaf <br />
                                         300gm | 120 cups
                                     </h6>
@@ -97,7 +97,7 @@ function NewProductPage() {
                         <div className="col" style={{ display: "flex" }}>
                             <div class="card w-100">
                                 <div class="card-body py-1">
-                                    <h6 className="text-center" style={{ fontSize: "15px" }}>
+                                    <h6 className="text-center" className="sub_para">
                                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/loose-leaf.svg?v=9469339130553571855" alt="#ImgNotFound" width="15px" height="15px" /> Loose leaf <br />
                                         500gm | 250 cups
                                     </h6>
@@ -111,7 +111,7 @@ function NewProductPage() {
                             <button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-plus"></i></button><input type="text" style={{ width: "80px", fontSize: "24px" }} defaultValue="1" /><button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-minus"></i></button>
                         </div>
                         <div className="col-6 col-xl-4 pb-3">
-                            <button type="button" class="btn btn-secondary w-100">Add to Cart</button>
+                            <button type="button" class="btn btn-success w-100">Add to Cart</button>
                         </div>
                         <div className="col-6 col-xl-4 pb-3">
                             <button type="button" class="btn btn-primary w-100">Buy Now</button>
@@ -120,99 +120,99 @@ function NewProductPage() {
                 </div>
             </div>
             <div className="mx-xl-5 believe_car_before_md_scrn pt-5">
-                <h1 className="text-center why_choose_us_heading">Why Choose Us</h1>
+                <h1 className="text-center main_heading"><b>Why Choose Us</b></h1>
                 <BelieveCardBeforeMDScrn />
             </div>
             <div className="believe_car_after_md_scrn pt-5">
-                <h1 className="text-center why_choose_us_heading">Why Choose Us</h1>
+                <h1 className="text-center main_heading"><b>Why Choose Us</b></h1>
                 <BelieveCardAfterMDScrn />
             </div>
-            <h1 className="text-center freshness_journey_heading">FRESHNESS JOURNEY</h1>
-            <div className="heading_para_size text-center pb-3">
+            <h1 className="text-center main_heading"><b>FRESHNESS JOURNEY</b></h1>
+            <div className="sub_heading text-center pb-3">
                 Our Unique $ Transparent procurement process, from <b>leaf to cup</b>
             </div>
             <div className="text-center">
                 <div className="row">
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-1.svg?v=12636508475391262561" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Picked & Processed</h6>
+                        <h6 className="sub_para">Picked & Processed</h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>23rd-24th May'22</p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-2.svg?v=6602855577405003226" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Arrived at Teabox</h6>
+                        <h6 className="sub_para">Arrived at Teabox</h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-3.svg?v=12505986752712508259" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Sorted & Cleaned</h6>
+                        <h6 className="sub_para">Sorted & Cleaned</h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-4.svg?v=4606512964122051706" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Vacuum Packed</h6>
+                        <h6 className="sub_para">Vacuum Packed</h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-5.svg?v=14189309169453830059" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Stored @ -5°c </h6>
+                        <h6 className="sub_para">Stored @ -5°c </h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-6.svg?v=3201811780339525507" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Ready to Ship</h6>
+                        <h6 className="sub_para">Ready to Ship</h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>26th May'22</p>
                     </div>
                 </div>
             </div>
             <div className="videoSection py-5">
-                <h1 className="text-center freshness_journey_heading">Product Video</h1>
+                <h1 className="text-center main_heading"><b>Product Video</b></h1>
                 <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
-            <h1 className="text-center know_your_ghee_heading"><u>KNOW YOUR Ghee</u></h1>
+            <h1 className="text-center main_heading"><b>KNOW YOUR Ghee</b></h1>
             <div className="py-3">
-                <h1 className="text-center know_your_tea_heading">KNOW YOUR TEA</h1>
+                <h1 className="text-center sub_heading">KNOW YOUR TEA</h1>
                 <div className="text-center">
-                    <p className="heading_para_size">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
+                    <p className="sub_para">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
 
                     <div className="row p-5">
-                        <h1 className="text-center product_speacfication_heading pb-4">Product Specifications</h1>
+                        <h1 className="text-center main_heading pb-4"><b>Product Specifications</b></h1>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/specs-5_green_de520591-ebda-4c3b-b443-34b96341f545.svg?v=1632141212" alt="#ImgNotFound" width="50px" height="50px" />
-                            <h6 style={{ fontSize: "15px" }}>Season</h6>
+                            <h6 className="sub_para">Season</h6>
                             <p className="text-success" style={{ fontSize: "12px" }}>First Flush</p>
                         </div>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/specs-6_green_1c66ff0d-ebe7-4f93-b6d4-450aa8b79260.svg?v=1632141212" alt="#ImgNotFound" width="50px" height="50px" />
-                            <h6 style={{ fontSize: "15px" }}>Specialty</h6>
+                            <h6 className="sub_para">Specialty</h6>
                             <p className="text-success" style={{ fontSize: "12px" }}>Chinary</p>
                         </div>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Caffeine.svg?v=1632222600" alt="#ImgNotFound" width="50px" height="50px" />
-                            <h6 style={{ fontSize: "15px" }}>Caffeine</h6>
+                            <h6 className="sub_para">Caffeine</h6>
                             <p className="text-success" style={{ fontSize: "12px" }}>Medium</p>
                         </div>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/specs-2_green_ee57406e-b4a2-40a7-9344-df476ed97acb.svg?v=1632141212" alt="#ImgNotFound" width="50px" height="50px" />
-                            <h6 style={{ fontSize: "15px" }}>Time Of Day</h6>
+                            <h6 className="sub_para">Time Of Day</h6>
                             <p className="text-success" style={{ fontSize: "12px" }}>Afternoon</p>
                         </div>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Tea_Grade_Logo_1.svg?v=1632138898" alt="#ImgNotFound" width="50px" height="50px" />
-                            <h6 style={{ fontSize: "15px" }}>Grade</h6>
+                            <h6 className="sub_para">Grade</h6>
                             <p className="text-success" style={{ fontSize: "12px" }}>FTGFOP1</p>
                         </div>
                         <div className="col-4">
                             <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Invoice_Logo_1.svg?v=1632138898" alt="#ImgNotFound" width="50px" height="50px" />
-                            <h6 style={{ fontSize: "15px" }}>Invoice </h6>
+                            <h6 className="sub_para">Invoice </h6>
                             <p className="text-success" style={{ fontSize: "12px" }}>EX-5</p>
                         </div>
                     </div>
 
-                    <h1 className="text-center benefits_heading pb-4">Benefits</h1>
+                    <h1 className="text-center main_heading pb-2"><b>Benefits</b></h1>
                     <div className="row">
                         <div className="col-12 col-md-6 col-xl-4">
                             <BenefitsCard />
@@ -236,7 +236,7 @@ function NewProductPage() {
                 </div>
             </div>
             <div className="py-5">
-                <h1 className="text-center cartificate_heading">Certificate</h1>
+                <h1 className="text-center main_heading"><b>Certificate</b></h1>
                 <div className="row">
                     <div className="col text-center">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/Rain-Forest-Alliance_480x.jpg?v=14369409827332263818" alt="#ImgNotFound" width="200px" height="200px" />
@@ -250,23 +250,23 @@ function NewProductPage() {
                 </div>
             </div>
             <div className="py-5 px-1 px-lg-3">
-                <h1 className="text-center your_experience">EXPERIENCE</h1>
-                <div className="row pt-5">
-                    <div className="col-md-6 order-2 order-md-1">
-                        <h3>Appearance</h3>
-                        <p className="heading_para_size">
+                <h1 className="text-center main_heading"><b>EXPERIENCE</b></h1>
+                <div className="row">
+                    <div className="col-md-6 order-2 order-md-1 pt-5">
+                        <h3 className="sub_heading">Appearance</h3>
+                        <p className="sub_para">
                             Champagne
                         </p>
-                        <h3>Taste</h3>
-                        <p className="heading_para_size">
+                        <h3 className="sub_heading">Taste</h3>
+                        <p className="sub_para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi ipsa culpa? Ad modi animi corporis libero, ipsam voluptatem molestiae quas optio repellat iusto in, asperiores quam neque amet suscipit laboriosam odit, quidem quaerat ipsa sapiente eligendi! Maxime repellat amet voluptatem eum excepturi labore exercitationem distinctio quaerat repudiandae, eos quam facilis sunt itaque? Cupiditate minima quo consequuntur asperiores sequi? Consectetur aspernatur beatae odit? Pariatur, quam tempora suscipit rerum consequatur et nesciunt, iusto error ut eligendi excepturi quod, cum neque non velit dolorum eum fuga molestias est laboriosam enim doloremque illum perspiciatis. Dolores tempore accusantium blanditiis sequi, ex natus beatae excepturi.
                         </p>
                     </div>
-                    <div className="col-md-6 order-1 order-md-2">
-                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_4_1000x.jpg?v=1653567234" alt="#ImgNotFound" className="w-100" />
+                    <div className="col-md-6 order-1 order-md-2 text-center">
+                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_4_1000x.jpg?v=1653567234" alt="#ImgNotFound" className="w-100" style={{ maxHeight: "500px", maxWidth: "500px" }} />
                     </div>
                 </div>
-                <h1 className="text-center How_to_Check_Ghee_Purity_heading py-5"><u>How to Check Ghee Purity-</u></h1>
+                <h1 className="text-center main_heading pt-5 pb-3"><b>How to Check Ghee Purity-</b></h1>
                 <div className="px-xl-5 mx-xl-5">
                     <video width="100%" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
                         Your browser does not support the video tag.
@@ -289,13 +289,13 @@ function NewProductPage() {
                         </div>
                     </div>
                 </div>
-                <h1 className="text-center How_to_Check_Ghee_Purity_heading py-5"><u>How to Check Ghee Purity-</u></h1>
-                <h1 className="text-center know_your_tea_heading">KNOW YOUR TEA</h1>
+                <h1 className="text-center main_heading pt-5"><b>How to Check Ghee Purity-</b></h1>
+                <h1 className="text-center sub_heading">KNOW YOUR TEA</h1>
                 <div classsName="text-center">
-                    <p className="heading_para_size">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
+                    <p className="sub_para">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
                 </div>
-                <h1 className="text-center review_and_rating_heading py-5"><u>Rating and Reviews</u></h1>
-                <h4>Rating and Reviews</h4>
+                <h1 className="text-center main_heading py-5">Rating and Reviews</h1>
+                <h4 className="sub_heading"><b>Rating and Reviews</b></h4>
                 <div className="row">
                     <div className="col-6">
                         <div className="row">
@@ -354,7 +354,7 @@ function NewProductPage() {
                         <ReviewAndRating />
                     </div>
                 </div>
-                <h1 className="text-center related_project_heading pt-5">Related Products</h1>
+                <h1 className="text-center main_heading pt-5"><b>Related Products</b></h1>
                 <div className="row">
                     <div className="col-12 col-md-6 col-xl-4">
                         <RelatedProductCard />
