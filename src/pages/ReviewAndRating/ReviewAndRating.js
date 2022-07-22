@@ -27,8 +27,16 @@ function ReviewAndRating() {
                                 <span class="fa fa-star"></span>
                             </div>
                         </div>
+                        <hr />
                     </div>
-                    <p class="card-text">Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description</p>
+                    <p className="sub_heading">
+                    Very nice tea. We are enjoying.
+                    </p>
+                    <h5 className="sub_para"><i class="fa fa-check text-success"></i> I recommend this product</h5>
+                    <div className="sub_para">
+                    Review left on: Darjeeling Castleton Spring Chinary Black - Loose leaf / 1kg | 500 cup
+                    </div>
+                    {/* <p class="card-text">Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description Benefits Description</p> */}
                 </div>
             </div>
         </>

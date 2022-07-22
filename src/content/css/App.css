@@ -137,9 +137,18 @@
     }
 }
 
+/* .progress{
+    max-width: 200px;
+} */
 @media (max-width: 991px) {
     .verified_lawyer {
         text-align: left;
+    }
+    .write_a_review_btn{
+        width: 100%;
+    }
+    .progress{
+        width: 100%;
     }
 }
 

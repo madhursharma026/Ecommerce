@@ -1,7 +1,7 @@
 export default function BelieveCardAfterMDScrn() {
     return (
         <>
-            <div className="row mx-xl-5 my-5 text-center" style={{ background: "#F2F9F5" }}>
+            <div className="row mx-xl-5 mb-5 mt-3 text-center" style={{ background: "#F2F9F5" }}>
                 <div className="col-6 p-3" style={{ borderRight: "1px solid black", borderBottom: "1px solid black" }}>
                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/painpoint-1.svg?v=6547587459045280236" alt="#ImgNotFound" width="50px" height="50px" />
                     <h5 className="sub_heading">100% Freshness guarantee</h5>

@@ -9,36 +9,36 @@ import { useEffect } from "react";
 function NewProductPage() {
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
 
     return (
         <div className="container-xl">
-            <div className="row pt-3">
-                <div className="col-lg-6">
+            <div className="row pt-3 pt-3">
+                <div className="col-lg-6 px-lg-5">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner text-center">
-                            <div class="carousel-item active" style={{ minHeight: "400px" }}>
+                            <div class="carousel-item active">
                                 <div className="px-5">
                                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_1_1_7c8337ba-ebd3-43d4-a270-8230d51b3250_1_1024x.jpg?v=1653632514" class="d-block w-100" alt="#ImgNotFound" />
                                 </div>
                             </div>
-                            <div class="carousel-item" style={{ minHeight: "400px" }}>
+                            <div class="carousel-item">
                                 <div className="px-5">
                                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_2_1024x.jpg?v=1653632514" class="d-block w-100" alt="#ImgNotFound" />
                                 </div>
                             </div>
-                            <div class="carousel-item" style={{ minHeight: "400px" }}>
+                            <div class="carousel-item">
                                 <div className="px-5">
                                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_3_1962717b-3459-44ed-a696-1bac6ab0ffb9_1024x.jpg?v=1653632514" class="d-block w-100" alt="#ImgNotFound" />
                                 </div>
                             </div>
-                            <div class="carousel-item" style={{ minHeight: "400px" }}>
+                            <div class="carousel-item">
                                 <div className="px-5">
                                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/BLACK_TEA_100gm_1634db94-bc2c-472b-bf9e-fe86b8600471_1024x.jpg?v=1653567234" class="d-block w-100" alt="#ImgNotFound" />
                                 </div>
                             </div>
-                            <div class="carousel-item" style={{ minHeight: "400px" }}>
+                            <div class="carousel-item">
                                 <div className="px-5">
                                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_4_1024x.jpg?v=1653567234" class="d-block w-100" alt="#ImgNotFound" />
                                 </div>
@@ -54,10 +54,13 @@ function NewProductPage() {
                         </button>
                     </div>
                 </div>
-                <div className="col-lg-6 px-1 px-lg-3">
+                <div className="col-lg-6 px-3 pt-3">
                     <h3>Darjeeling Castleton Spring Chinary Black</h3>
-                    <div className="row">
-                        <div className="col">Darjeeling Black</div>
+                    <div className="row py-1">
+                        <div className="col">
+                            <Link to="/" className="text-success" style={{fontSize:"14px"}}>Darjeeling</Link>&nbsp;
+                            <Link to="/" className="text-muted" style={{fontSize:"14px"}}>Black</Link>
+                        </div>
                         <div className="col" style={{ textAlign: "right" }}>
                             <span>
                                 <i class="fa fa-star" style={{ color: "#EEC200" }}></i>
@@ -69,35 +72,35 @@ function NewProductPage() {
                             </span>
                         </div>
                     </div>
-                    <p className="text-muted" style={{ fontSize: "20px" }}>
+                    <p className="text-muted pt-2" style={{ fontSize: "20px" }}>
                         A fruity-nutty cup, fresh from Darjeeling
                     </p>
                     <h6>Buying Options</h6>
-                    <div className="row pt-3">
-                        <div className="col" style={{ display: "flex" }}>
+                    <div className="row pt-3 px-2">
+                        <div className="col text-center px-lg-1" style={{ display: "flex" }}>
                             <div class="card w-100" style={{ border: "2px solid #009340" }}>
                                 <div class="card-body py-1">
-                                    <h6 className="text-success text-center" className="sub_para">
+                                    <h6 className="text-success text-center" style={{ textSize: "13px" }}>
                                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/loose-leaf-green.svg?v=3326972369061157883" alt="#ImgNotFound" width="15px" height="15px" /> Loose leaf <br />
                                         100gm | 50 cups
                                     </h6>
                                 </div>
                             </div>
                         </div>
-                        <div className="col" style={{ display: "flex" }}>
+                        <div className="col text-center px-lg-1" style={{ display: "flex" }}>
                             <div class="card w-100">
                                 <div class="card-body py-1">
-                                    <h6 className="text-center" className="sub_para">
+                                    <h6 className="text-center" style={{ textSize: "13px" }}>
                                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/loose-leaf.svg?v=9469339130553571855" alt="#ImgNotFound" width="15px" height="15px" /> Loose leaf <br />
                                         300gm | 120 cups
                                     </h6>
                                 </div>
                             </div>
                         </div>
-                        <div className="col" style={{ display: "flex" }}>
+                        <div className="col text-center px-lg-1" style={{ display: "flex" }}>
                             <div class="card w-100">
                                 <div class="card-body py-1">
-                                    <h6 className="text-center" className="sub_para">
+                                    <h6 className="text-center" style={{ textSize: "13px" }}>
                                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/loose-leaf.svg?v=9469339130553571855" alt="#ImgNotFound" width="15px" height="15px" /> Loose leaf <br />
                                         500gm | 250 cups
                                     </h6>
@@ -105,8 +108,8 @@ function NewProductPage() {
                             </div>
                         </div>
                     </div>
-                    <h4 className="pt-4"><del>₹749</del> ₹549</h4>
-                    <div className="row">
+                    <h4 className="pt-4" style={{ fontSize: "22px" }}>₹ 549</h4>
+                    <div className="row py-2">
                         <div className="col-xl-4 text-center pb-3">
                             <button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-plus"></i></button><input type="text" style={{ width: "80px", fontSize: "24px" }} defaultValue="1" /><button type="button" class="btn" style={{ backgrond: "transparent", height: "42px", marginTop: "-12px", borderRadius: "0", border: "0" }}><i class="fa fa-minus"></i></button>
                         </div>
@@ -127,7 +130,7 @@ function NewProductPage() {
                 <h1 className="text-center main_heading"><b>Why Choose Us</b></h1>
                 <BelieveCardAfterMDScrn />
             </div>
-            <h1 className="text-center main_heading"><b>FRESHNESS JOURNEY</b></h1>
+            <h1 className="text-center main_heading pt-5"><b>FRESHNESS JOURNEY</b></h1>
             <div className="sub_heading text-center pb-3">
                 Our Unique $ Transparent procurement process, from <b>leaf to cup</b>
             </div>
@@ -136,32 +139,32 @@ function NewProductPage() {
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-1.svg?v=12636508475391262561" alt="#ImgNotFound" width="100px" height="100px" />
                         <h6 className="sub_para">Picked & Processed</h6>
-                        <p className="text-success" style={{ fontSize: "12px" }}>23rd-24th May'22</p>
+                        <p className="text-success" style={{ fontSize: "12px" }}><b>23rd-24th May'22</b></p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-2.svg?v=6602855577405003226" alt="#ImgNotFound" width="100px" height="100px" />
                         <h6 className="sub_para">Arrived at Teabox</h6>
-                        <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
+                        <p className="text-success" style={{ fontSize: "12px" }}><b>25th May'22</b></p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-3.svg?v=12505986752712508259" alt="#ImgNotFound" width="100px" height="100px" />
                         <h6 className="sub_para">Sorted & Cleaned</h6>
-                        <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
+                        <p className="text-success" style={{ fontSize: "12px" }}><b>25th May'22</b></p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-4.svg?v=4606512964122051706" alt="#ImgNotFound" width="100px" height="100px" />
                         <h6 className="sub_para">Vacuum Packed</h6>
-                        <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
+                        <p className="text-success" style={{ fontSize: "12px" }}><b>25th May'22</b></p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-5.svg?v=14189309169453830059" alt="#ImgNotFound" width="100px" height="100px" />
                         <h6 className="sub_para">Stored @ -5°c </h6>
-                        <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
+                        <p className="text-success" style={{ fontSize: "12px" }}><b>25th May'22</b></p>
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-6.svg?v=3201811780339525507" alt="#ImgNotFound" width="100px" height="100px" />
                         <h6 className="sub_para">Ready to Ship</h6>
-                        <p className="text-success" style={{ fontSize: "12px" }}>26th May'22</p>
+                        <p className="text-success" style={{ fontSize: "12px" }}><b>26th May'22</b></p>
                     </div>
                 </div>
             </div>
@@ -213,7 +216,7 @@ function NewProductPage() {
                     </div>
 
                     <h1 className="text-center main_heading pb-2"><b>Benefits</b></h1>
-                    <div className="row">
+                    <div className="row px-5">
                         <div className="col-12 col-md-6 col-xl-4">
                             <BenefitsCard />
                         </div>
@@ -263,7 +266,7 @@ function NewProductPage() {
                         </p>
                     </div>
                     <div className="col-md-6 order-1 order-md-2 text-center">
-                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_4_1000x.jpg?v=1653567234" alt="#ImgNotFound" className="w-100" style={{ maxHeight: "500px", maxWidth: "500px" }} />
+                        <img src="https://cdn.shopify.com/s/files/1/1865/1011/products/FFCTCHB_4_1000x.jpg?v=1653567234" alt="#ImgNotFound" className="w-100" style={{ maxWidth: "500px" }} />
                     </div>
                 </div>
                 <h1 className="text-center main_heading pt-5 pb-3"><b>How to Check Ghee Purity-</b></h1>
@@ -295,26 +298,35 @@ function NewProductPage() {
                     <p className="sub_para">Originally known as Kumseri, the Castleton tea estate was established in 1855. Located in Kurseong, Darjeeling, this estate has 130-year-old chinary bushes. Picked fresh at 4000 feet, this chinary black we have procured is an impressive one! Vegetal, stone-fruity with nutty accents, this Indian Single Estate is a captivating cup of First Flush 2022, fresh from the misty hills!</p>
                 </div>
                 <h1 className="text-center main_heading py-5">Rating and Reviews</h1>
-                <h4 className="sub_heading"><b>Rating and Reviews</b></h4>
-                <div className="row">
-                    <div className="col-6">
-                        <div className="row">
+                <div className="row px-5">
+                    <div className="col-lg-7">
+                        <div className="row px-lg-5">
                             <div className="col-lg-5 text-center">
                                 <h1>4.97</h1>
                                 <h4><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h4>
                                 <h6>40 reviews</h6>
                             </div>
                             <div className="col-lg-7 text-center">
-                                <h6>5 <progress value="95" max="100" style={{ background: "#51BE66" }}></progress></h6>
-                                <h6>4 <progress value="5" max="100" style={{ background: "#51BE66" }}></progress></h6>
-                                <h6>3 <progress value="00" max="100" style={{ background: "#51BE66" }}></progress></h6>
-                                <h6>2 <progress value="00" max="100" style={{ background: "#51BE66" }}></progress></h6>
-                                <h6>1 <progress value="00" max="100" style={{ background: "#51BE66" }}></progress></h6>
+                                <div class="progress mb-2" style={{ height: "15px" }}>
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "25%", background: "#35d57b" }}></div>
+                                </div>
+                                <div class="progress mb-2" style={{ height: "15px" }}>
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "25%", background: "#35d57b" }}></div>
+                                </div>
+                                <div class="progress mb-2" style={{ height: "15px" }}>
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "25%", background: "#35d57b" }}></div>
+                                </div>
+                                <div class="progress mb-2" style={{ height: "15px" }}>
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "25%", background: "#35d57b" }}></div>
+                                </div>
+                                <div class="progress mb-2" style={{ height: "15px" }}>
+                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: "25%", background: "#35d57b" }}></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-6" style={{ textAlign: 'right' }}>
-                        <button type="button" class="btn text-light" style={{ background: "#51BE66" }}>WRITE A REVIEW</button>
+                    <div className="col-lg-5 px-lg-5" style={{ textAlign: 'right' }}>
+                        <button type="button" class="btn text-light write_a_review_btn" style={{ background: "#51BE66" }}>WRITE A REVIEW</button>
                     </div>
                 </div>
                 <hr />
@@ -367,7 +379,7 @@ function NewProductPage() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

@@ -2,7 +2,7 @@
 export default function BelieveCardBeforeMDScrn() {
     return (
         <>
-            <div class="card mx-xl-5 BelieveCardBeforeMDScrn my-5">
+            <div class="card mx-xl-5 BelieveCardBeforeMDScrn mb-5 mt-3">
                 <div class="card-body">
                     <div className="row">
                         <div className="col-6">
