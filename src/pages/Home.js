@@ -147,7 +147,7 @@ function Home() {
           </button>
         </div>
 
-        <h1 className="pt-5 text-center pb-3 main_heading">YOU ASKED. <span className="text-success">WE ANSWERED.</span></h1>
+        <h1 className="pt-5 text-center pb-3 main_heading"><b>YOU ASKED. <span className="text-success">WE ANSWERED.</span></b></h1>
         <div className="mx-lg-5 px-lg-5 pb-3">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item" style={{ border: "0" }}>
