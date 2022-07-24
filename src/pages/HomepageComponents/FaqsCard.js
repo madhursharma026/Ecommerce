@@ -3,7 +3,7 @@ function FaqsCard() {
     return (
         <div className="mx-lg-5">
             <div class="card">
-                <div class="card-body py-lg-5 text-center px-5">
+                <div class="card-body py-lg-5 text-center carosul-card">
                     <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/do-arrow.png?v=1627904599" alt="#ImgNotFound" /><br />
                     <h4 className="py-3">"Excellent Quality and I really feel the freshness when unpack. I have ordered more teas from my regular morning consumption from your black tea selection. "</h4>
                     <div className="row pt-4">

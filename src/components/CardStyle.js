@@ -23,7 +23,7 @@ function CardStyle(props) {
                             <button class="btn dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ background: "white", border: "1px solid black" }}>
                                 100 gm | 40 cup ₹899
                             </button>
-                            <ul class="dropdown-menu w-100 text-center">
+                            <ul class="dropdown-menu text-center ">
                                 <li>
                                     <Link class="dropdown-item" to="/">300gm | 12cups <del className="text-muted">₹2,247</del> ₹2090 <b><span className="text-success">Save 6%</span></b></Link>
                                     <hr />
@@ -33,7 +33,7 @@ function CardStyle(props) {
                                 </li>
                             </ul>
                         </div>
-                        <Link to="/" class="btn mt-3 text-white" style={{background:"#02CB5A", border:"0"}}>ADD TO CART</Link>
+                        <Link to="/" class="btn mt-3 text-white" style={{ background: "#02CB5A", border: "0" }}>ADD TO CART</Link>
                     </div>
                 </div>
             </Link>
