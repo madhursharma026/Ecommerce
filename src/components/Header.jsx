@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import headerLogo from '../content/images/headerLogo.png'
+import headerLogo from '../content/images/logo.png'
 
 export default function Header() {
     return (
@@ -8,7 +8,7 @@ export default function Header() {
                 <nav class="navbar navbar-expand-xl bg-light border-bottom">
                     <div class="container-xxl">
                         <Link className='navbar-brand' to='/'>
-                            <img src={headerLogo} alt="#imgNotFound" width="145px" height="45px" />
+                            <img src={headerLogo} alt="#imgNotFound" width="100px" height="auto" />
                         </Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -47,6 +47,7 @@ export default function Header() {
                     </div>
                 </nav>
             </div>
+
             <div className="header_options_after_xl_scrn header_bg text-center">
                 <div className="row">
                     <div className="col pt-2 header-links">

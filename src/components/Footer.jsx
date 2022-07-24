@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import fbIcon from '../content/images/fbIcon.png'
 import instaIcon from '../content/images/instaIcon.png'
 import twiterIcon from '../content/images/twiterIcon.png'
-import headerLogo from '../content/images/headerLogo.png'
+import headerLogo from '../content/images/logo.png'
 
 export default function Footer() {
     return (

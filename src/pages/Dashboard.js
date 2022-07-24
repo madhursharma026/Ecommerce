@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 function Dashboard(props) {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
     return (
         <>
             <div className="container-xl pt-5 dashboard_data_before_md_srcn">

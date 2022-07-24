@@ -1,11 +1,7 @@
 import BelieveCardAfterMDScrn from "./ProductPageComponents/BelieveCardAfterMDScrn";
 import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMDScrn";
-import { useEffect } from "react";
 
 function ProductPage() {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
 
 
     return (
@@ -123,7 +119,7 @@ function ProductPage() {
                     </div>
                     <div className="col-4 col-md-2">
                         <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-2.svg?v=6602855577405003226" alt="#ImgNotFound" width="100px" height="100px" />
-                        <h6 style={{ fontSize: "15px" }}>Arrived at Teabox</h6>
+                        <h6 style={{ fontSize: "15px" }}>Arrived at Ghee Wala</h6>
                         <p className="text-success" style={{ fontSize: "12px" }}>25th May'22</p>
                     </div>
                     <div className="col-4 col-md-2">

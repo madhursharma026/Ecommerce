@@ -6,7 +6,7 @@ function Login() {
             <div>
 
                 <div className="text-center mb-5">
-                    <img src="https://shopify-assets.shopifycdn.com/accounts/production/theme_configuration/logo/destination/Teabox%20IN/logo.png?v=1657952483" alt="#ImgNotFound" width="100px" height="40px" />
+                    <img src="https://shopify-assets.shopifycdn.com/accounts/production/theme_configuration/logo/destination/Ghee Wala%20IN/logo.png?v=1657952483" alt="#ImgNotFound" width="100px" height="40px" />
                 </div>
                 <div>
                     <h5 className="fw-semibold">

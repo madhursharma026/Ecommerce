@@ -1,16 +1,10 @@
 import { Link } from "react-router-dom";
-import BelieveCardAfterMDScrn from "./ProductPageComponents/BelieveCardAfterMDScrn";
 import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMDScrn";
 import BenefitsCard from "./ProductPageComponents/BenefitsCard";
 import RelatedProductCard from "./RelatedProductCard/RelatedProductCard";
 import ReviewAndRating from "./ReviewAndRating/ReviewAndRating";
-import { useEffect } from "react";
 
 function NewProductPageOne() {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
-
 
     return (
         <div className="container-xl py-4">
@@ -183,7 +177,7 @@ function NewProductPageOne() {
                             <div className="d-flex justfy-content-center align-items-center flex-column position-relative">
                                 <span className="fw-bold">Step 2</span>
                                 <img src="https://cdn.shopify.com/s/files/1/1865/1011/files/freshness-2.svg?v=6602855577405003226" alt="#ImgNotFound" width="100px" height="100px" />
-                                <h6 className="sub_para">Arrived at Teabox</h6>
+                                <h6 className="sub_para">Arrived at Ghee Wala</h6>
                                 <p className="text-success" style={{ fontSize: "12px" }}><b>25th May'22</b></p>
                                 <div className="step-arrow">
                                     <svg clip-rule="evenodd" width='30' fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" /></svg>

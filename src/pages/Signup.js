@@ -8,7 +8,7 @@ function Signup() {
                     <div className="row">
                         <div className="col-lg-4 offset-lg-4 px-5 px-lg-1">
                             <div className="text-center">
-                                <img src="https://shopify-assets.shopifycdn.com/accounts/production/theme_configuration/logo/destination/Teabox%20IN/logo.png?v=1657952483" alt="#ImgNotFound" width="100px" height="40px" />
+                                <img src="https://shopify-assets.shopifycdn.com/accounts/production/theme_configuration/logo/destination/Ghee Wala%20IN/logo.png?v=1657952483" alt="#ImgNotFound" width="100px" height="40px" />
                             </div>
                             <h5 className="pt-5">
                                 Enter a code:
