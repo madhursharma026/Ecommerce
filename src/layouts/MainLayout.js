@@ -4,16 +4,14 @@ import { Outlet } from "react-router-dom";
 
 export default function MainLayout() {
     return (
-        <>
-            <div className='main-layout'>
-                <div className="fixed-top">
-                    <Header />
-                </div>
-                <div style={{ marginTop: "70px" }}>
-                    <Outlet />
-                    <Footer />
-                </div>
+        <div className='main-layout position-relative'>
+            <div className="position-fixed w-100" style={{ zIndex: 55 }}>
+                <Header />
             </div>
-        </>
+            <div style={{ margin: "70px 0" }}>
+                <Outlet />
+                <Footer />
+            </div>
+        </div>
     );
 }

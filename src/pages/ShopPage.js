@@ -1,15 +1,9 @@
-import { Link } from "react-router-dom";
 import ProductCardStyle from "../components/ProductCardStyle";
 import product1 from '../content/images/product1.jpg'
 import product2 from '../content/images/product2.jpg'
 import shopPageTopBg from '../content/images/shopPageTopBg.jpg'
-import { useEffect } from "react";
 
 function ShopPage() {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-
 
     return (
         <>
