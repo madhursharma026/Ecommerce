@@ -3,8 +3,15 @@ import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMD
 import BenefitsCard from "./ProductPageComponents/BenefitsCard";
 import RelatedProductCard from "./RelatedProductCard/RelatedProductCard";
 import ReviewAndRating from "./ReviewAndRating/ReviewAndRating";
+import { increment } from '../Redux/EcommerceReducer';
+import { decrement } from '../Redux/EcommerceReducer';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 function NewProductPageTwo() {
+
+    const dispatch = useDispatch()
+    const counter = useSelector(state => state.counter)
 
     return (
         <div className="container-xl py-4">
@@ -116,11 +123,21 @@ function NewProductPageTwo() {
                         <div className="d-flex align-items-center justify-content-start mb-3">
                             <h5 className="fw-bold m-0"> &nbsp;₹ 650</h5>
                             <div className="d-flex align-items-center justify-content-start gap-3 ms-auto">
-                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }}>
-                                    <i class="fa fa-minus"></i>
-                                </div>
-                                <input type="text" defaultValue="1" className="w-25  rounded border ps-2" />
-                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }}>
+                                {counter >= 2 ?
+                                    <>
+                                        <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(decrement())}>
+                                            <i class="fa fa-minus"></i>
+                                        </div>
+                                    </>
+                                    :
+                                    <>
+                                        <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }}>
+                                            <i class="fa fa-minus"></i>
+                                        </div>
+                                    </>
+                                }
+                                <input type="text" defaultValue="1" value={counter} className="w-25  rounded border ps-2" />
+                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(increment())}>
                                     <i class="fa fa-plus"></i>
                                 </div>
                             </div>
