@@ -3,15 +3,15 @@ import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMD
 import BenefitsCard from "./ProductPageComponents/BenefitsCard";
 import RelatedProductCard from "./RelatedProductCard/RelatedProductCard";
 import ReviewAndRating from "./ReviewAndRating/ReviewAndRating";
-import { increment } from '../Redux/EcommerceReducer';
-import { decrement } from '../Redux/EcommerceReducer';
+import { BuffaloGheeincrement } from '../Redux/EcommerceReducer';
+import { BuffaloGheedecrement } from '../Redux/EcommerceReducer';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 function NewProductPageOne() {
 
     const dispatch = useDispatch()
-    const counter = useSelector(state => state.counter)
+    const BuffaloGhee = useSelector(state => state.BuffaloGhee)
 
     return (
         <div className="container-xl py-4">
@@ -123,9 +123,9 @@ function NewProductPageOne() {
                         <div className="d-flex align-items-center justify-content-start mb-3">
                             <h5 className="fw-bold m-0"> &nbsp;₹ 650</h5>
                             <div className="d-flex align-items-center justify-content-start gap-3 ms-auto">
-                                {counter >= 2 ?
+                                {BuffaloGhee >= 1 ?
                                     <>
-                                        <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(decrement())}>
+                                        <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(BuffaloGheedecrement())}>
                                             <i class="fa fa-minus"></i>
                                         </div>
                                     </>
@@ -136,8 +136,8 @@ function NewProductPageOne() {
                                         </div>
                                     </>
                                 }
-                                <input type="text" defaultValue="1" value={counter} className="w-25  rounded border ps-2" />
-                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(increment())}>
+                                <input type="text" defaultValue="1" value={BuffaloGhee} className="w-25  rounded border ps-2" />
+                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(BuffaloGheeincrement())}>
                                     <i class="fa fa-plus"></i>
                                 </div>
                             </div>

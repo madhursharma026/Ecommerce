@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 import headerLogo from '../content/images/logo.png'
+import { useSelector } from 'react-redux';
 
 export default function Header() {
+
+    const CowGhee = useSelector(state => state.CowGhee)
+    const BuffaloGhee = useSelector(state => state.BuffaloGhee)
+
+    const TotalProduct = CowGhee + BuffaloGhee
     return (
         <>
             <div className="header_options_before_xl_scrn">
@@ -39,7 +45,7 @@ export default function Header() {
                             <b>
                                 <div className="text-center">
                                     <i class="fa fa-shopping-cart" style={{ fontSize: "24px" }}></i>
-                                    <span class='cart-value cart-value-warning' id='cart-value-id'>0</span>
+                                    <span class='cart-value cart-value-warning' id='cart-value-id'>{TotalProduct}</span>
                                 </div>
                                 CART
                             </b>

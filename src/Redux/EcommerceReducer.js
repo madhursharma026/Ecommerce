@@ -1,32 +1,60 @@
-const INCREMENT = "INCREMENT";
-const DECREMENT = "DECREMENT";
+const COWGHEEINCREMENT = "COWGHEEINCREMENT";
+const COWGHEEDECREMENT = "COWGHEEDECREMENT";
+const BUFFALOGHEEINCREMENT = "BUFFALOGHEEINCREMENT";
+const BUFFALOGHEEDECREMENT = "BUFFALOGHEEDECREMENT";
 
 // Action creators
-export const increment = () => ({
-    type: INCREMENT,
+export const CowGheeincrement = () => ({
+    type: COWGHEEINCREMENT,
 })
 
-export const decrement = () => ({
-    type: DECREMENT,
+export const CowGheedecrement = () => ({
+    type: COWGHEEDECREMENT,
+})
+
+// Action creators
+export const BuffaloGheeincrement = () => ({
+    type: BUFFALOGHEEINCREMENT,
+})
+
+export const BuffaloGheedecrement = () => ({
+    type: BUFFALOGHEEDECREMENT,
 })
 
 // Initial state
 const initialState = {
-    counter: 1
+    // counter: 1,
+    BuffaloGhee: 0,
+    CowGhee: 0
 }
 
 // Root reducer
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
-        case INCREMENT:
+        case COWGHEEINCREMENT:
             return {
                 ...state,
-                counter: state.counter + 1
+                // counter: 1,
+                BuffaloGhee: state.BuffaloGhee,
+                CowGhee: state.CowGhee + 1
             }
-        case DECREMENT:
+        case COWGHEEDECREMENT:
             return {
                 ...state,
-                counter: state.counter - 1
+                BuffaloGhee: state.BuffaloGhee,
+                CowGhee: state.CowGhee - 1
+            }
+        case BUFFALOGHEEINCREMENT:
+            return {
+                ...state,
+                BuffaloGhee: state.BuffaloGhee + 1,
+                CowGhee: state.CowGhee
+            }
+        case BUFFALOGHEEDECREMENT:
+            return {
+                ...state,
+                BuffaloGhee: state.BuffaloGhee - 1,
+                CowGhee: state.CowGhee
             }
         default:
             return state

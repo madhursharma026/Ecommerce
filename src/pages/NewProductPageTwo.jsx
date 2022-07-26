@@ -3,15 +3,15 @@ import BelieveCardBeforeMDScrn from "./ProductPageComponents/BelieveCardBeforeMD
 import BenefitsCard from "./ProductPageComponents/BenefitsCard";
 import RelatedProductCard from "./RelatedProductCard/RelatedProductCard";
 import ReviewAndRating from "./ReviewAndRating/ReviewAndRating";
-import { increment } from '../Redux/EcommerceReducer';
-import { decrement } from '../Redux/EcommerceReducer';
+import { CowGheeincrement } from '../Redux/EcommerceReducer';
+import { CowGheedecrement } from '../Redux/EcommerceReducer';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 function NewProductPageTwo() {
 
     const dispatch = useDispatch()
-    const counter = useSelector(state => state.counter)
+    const CowGhee = useSelector(state => state.CowGhee)
 
     return (
         <div className="container-xl py-4">
@@ -123,9 +123,9 @@ function NewProductPageTwo() {
                         <div className="d-flex align-items-center justify-content-start mb-3">
                             <h5 className="fw-bold m-0"> &nbsp;₹ 650</h5>
                             <div className="d-flex align-items-center justify-content-start gap-3 ms-auto">
-                                {counter >= 2 ?
+                                {CowGhee >= 1 ?
                                     <>
-                                        <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(decrement())}>
+                                        <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(CowGheedecrement())}>
                                             <i class="fa fa-minus"></i>
                                         </div>
                                     </>
@@ -136,8 +136,8 @@ function NewProductPageTwo() {
                                         </div>
                                     </>
                                 }
-                                <input type="text" defaultValue="1" value={counter} className="w-25  rounded border ps-2" />
-                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(increment())}>
+                                <input type="text" defaultValue="1" value={CowGhee} className="w-25  rounded border ps-2" />
+                                <div className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center cursor-pointer" style={{ width: '2rem', height: "2rem", background: 'lightgray' }} onClick={() => dispatch(CowGheeincrement())}>
                                     <i class="fa fa-plus"></i>
                                 </div>
                             </div>
